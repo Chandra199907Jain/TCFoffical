@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="keywords" content="Cake, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Cake Flakes</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'tcf/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/flaticon.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'tcf/css/style.css' %}" type="text/css">
+
+    
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__cart">
+            <div class="offcanvas__cart__links">
+                <a href="#" class="search-switch"><img src="{% static 'tcf/img/tcflogoofficial.jfif' %}" style="width:30%"alt="">
+            </div>
+           
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"style="margin-top:-70px;"></div>
+        
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container-fluid">
+                <div class="row"style="background-color:#4fc3f7">
+
+                    <div class="col-lg-12">
+                        <div class="header__top__inner">
+                            
+                            <div class="header__logo">
+                                <a href="./index.html"><img src="{% static 'tcf/img/tcflogoofficial.jfif' %}"style="width:10%" alt=""></a>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    
+    <!-- Contact Section Begin -->
+    <section class="contact spad">
+        <div class="container">
+            
+            <h3 class="text-center" style="font-family:algerian">Register</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                  
+                </div>
+          
+                <div class="col-lg-8">
+                    <div class="contact__form"style="margin-top:8%">
+                        <!-- <div class="class-heading">
+                            <h1 style="margin-top:-15%">Register</h1>
+                        </div> -->
+                        
+                        <form method="POST">
+                            {% csrf_token %}
+                            
+                            
+                                <div class="col-lg-6">
+                                    <input type="text"name="name" placeholder="Name">
+                                </div>
+                                <br>
+                                <div class="col-lg-6">
+                                    <input type="text"name="email" placeholder="Email">
+                                </div>
+                                <br>
+                                <div class="col-lg-6">
+                                    <input type="password"name="password"placeholder="Enter your password">
+                                    <button type="submit" class="site-btn">Register</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Already have an account <a href="login">Login</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+
+
+<!-- Js Plugins -->
+<script src="{% static 'tcf/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'tcf/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'tcf/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'tcf/js/jquery.barfiller.js' %}"></script>
+<script src="{% static 'tcf/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'tcf/js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'tcf/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'tcf/js/jquery.nicescroll.min.js' %}"></script>
+<script src="{% static 'tcf/js/main.js' %}"></script>
+</body>
+
+</html>
